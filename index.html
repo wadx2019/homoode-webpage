@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>CSOT-for-LNL</title>
+    <title>HomoODE</title>
     <link rel="icon" href="shooting-star_emoji.png" title="UniOT-for-UniDA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
@@ -13,24 +13,23 @@
   <body>
     <section class="page-header">
       <h1 class=>NeurIPS 2023</h1>
-      <h1 class="project-name">CSOT:<br>Two Sides of The Same Coin: Bridging Deep Equilibrium Models and Neural ODEs via Homotopy Continuation</h1>
+      <h1 class="project-name">Two Sides of The Same Coin: Bridging Deep Equilibrium Models and Neural ODEs via Homotopy Continuation</h1>
 
-      <h2 class="project-tagline">Wanxing Chang<sup>1</sup> &emsp; Ye Shi<sup>1,2</sup> &emsp; Jingya Wang<sup>1,2</sup>*</h2>
-      <h2 class="project-tagline"><sup>1</sup>ShanghaiTech University &emsp; <sup>2</sup>Shanghai Engineering Research Center of Intelligent Vision and Imaging</h2>
+      <h2 class="project-tagline">Shutong Ding<sup>1</sup> &emsp; Tianyu Cui<sup>1</sup>sup Jingya Wang<sup>1</sup> &emsp; Ye Shi<sup>1</sup>*</h2>
+      <h2 class="project-tagline"><sup>1</sup>ShanghaiTech University</h2>
 
-      <a href="https://openreview.net/forum?id=y50AnAbKp1" class="btn">paper</a>
+      <a href="https://openreview.net/forum?id=R2rJq5OHdr" class="btn">paper</a>
       <a href="https://github.com/wadx2019/homoode" class="btn">code</a>
       <a href="" class="btn">slides</a>
       <a href="" class="btn">poster</a>
       <!-- <br> -->
       <a href="" class="btn">video (English)</a>
-      <!-- <a href="https://www.bilibili.com/video/BV1NM411L7BB" class="btn">video (Chinese)</a>
-      <a href="https://zhuanlan.zhihu.com/p/637401530" class="btn">blog (Chinese)</a> -->
+      <!-- <a href="" class="btn">video (Chinese)</a>
+      <a href="" class="btn">blog (Chinese)</a> -->
     </section>
 
     <section class="main-content">
-      <p>In this paper, we propose a novel optimal transport (OT) formulation for Learning with Noisy Labels (LNL), called Curriculum and Structure-aware Optimal Transport (CSOT). CSOT concurrently considers the inter- and intra-distribution structure of the samples to construct a robust denoising and relabeling allocator. During the training process, the allocator incrementally assigns reliable labels to a fraction of the samples with the highest confidence. These labels have both global discriminability and local coherence.  </p>
-
+      <p>Recent advances in constrained reinforcement learning (RL) have endowed reinforcement learning with certain safety guarantees. However, deploying existing constrained RL algorithms in continuous control tasks with general hard constraints remains challenging, particularly in those situations with non-convex hard constraints. Inspired by the generalized reduced gradient (GRG) algorithm, a classical constrained optimization technique, we propose a reduced policy optimization (RPO) algorithm that combines RL with GRG to address general hard constraints. RPO partitions actions into basic actions and nonbasic actions following the GRG method and outputs the basic actions via a policy network. Subsequently, RPO calculates the nonbasic actions by solving equations based on equality constraints using the obtained basic actions. The policy network is then updated by implicitly differentiating nonbasic actions with respect to basic actions. Additionally, we introduce an action projection procedure based on the reduced gradient and apply a modified Lagrangian relaxation technique to ensure inequality constraints are satisfied. To the best of our knowledge, RPO is the first attempt that introduces GRG to RL as a way of efficiently handling both equality and inequality hard constraints. It is worth noting that there is currently a lack of RL environments with complex hard constraints, which motivates us to develop three new benchmarks: two robotics manipulation tasks and a smart grid operation control task. With these benchmarks, RPO achieves better performance than previous constrained RL algorithms in terms of both cumulative reward and constraint violation. We believe RPO, along with the new benchmarks, will open up new opportunities for applying RL to real-world problems with complex constraints.
       <p><img src="CSOT-pipeline-des.png" alt="" style="max-width:100%;"></p>
 
       
